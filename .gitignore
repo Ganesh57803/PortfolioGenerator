@@ -16,6 +16,7 @@ __pycache__/
 # Ignore Jupyter Notebook checkpoints
 .ipynb_checkpoints/
 
+*.sqlite3
 # Ignore system files
 .DS_Store
 Thumbs.db
