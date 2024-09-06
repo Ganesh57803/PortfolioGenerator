@@ -1,0 +1,11 @@
+<!-- generate_portfolio.html -->
+<form method="post">
+    {% csrf_token %}
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name"><br><br>
+    <label for="bio">Bio:</label>
+    <textarea id="bio" name="bio"></textarea><br><br>
+    <label for="skills">Skills:</label>
+    <input type="text" id="skills" name="skills"><br><br>
+    <input type="submit" value="Generate Portfolio">
+</form>
