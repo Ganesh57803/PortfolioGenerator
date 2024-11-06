@@ -1,44 +1,60 @@
-<!-- generate_portfolio.html -->
-<form method="post">
-    {% csrf_token %}
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name"><br><br>
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Portfolio Form</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <!-- Portfolio Form -->
+    <div class="form-container">
+        <h2>Create Your Portfolio</h2>
+        <form method="post" class="portfolio-form">
+            {% csrf_token %}
+            
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
 
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
 
-    <label for="summary">Summary:</label>
-    <textarea id="summary" name="summary"></textarea><br><br>
+            <label for="summary">Summary:</label>
+            <textarea id="summary" name="summary" required></textarea>
 
-    <label for="github">GitHub:</label>
-    <input type="url" id="github" name="github"><br><br>
+            <label for="github">GitHub:</label>
+            <input type="url" id="github" name="github">
 
-    <label for="linkedin">LinkedIn:</label>
-    <input type="url" id="linkedin" name="linkedin"><br><br>
+            <label for="linkedin">LinkedIn:</label>
+            <input type="url" id="linkedin" name="linkedin">
 
-    <label for="instagram">Instagram:</label>
-    <input type="url" id="instagram" name="instagram"><br><br>
+            <label for="instagram">Instagram:</label>
+            <input type="url" id="instagram" name="instagram">
 
-    <label for="city">City:</label>
-    <input type="text" id="city" name="city"><br><br>
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city">
 
-    <label for="country">Country:</label>
-    <input type="text" id="country" name="country"><br><br>
+            <label for="country">Country:</label>
+            <input type="text" id="country" name="country">
 
-    <label for="college">College:</label>
-    <input type="text" id="college" name="college"><br><br>
+            <label for="college">College:</label>
+            <input type="text" id="college" name="college">
 
-    <label for="branch">Branch:</label>
-    <input type="text" id="branch" name="branch"><br><br>
+            <label for="branch">Branch:</label>
+            <input type="text" id="branch" name="branch">
 
-    <label for="hobbies1">Hobby 1:</label>
-    <input type="text" id="hobbies1" name="hobbies1"><br><br>
+            <label for="hobbies1">Hobby 1:</label>
+            <input type="text" id="hobbies1" name="hobbies1">
 
-    <label for="hobbies2">Hobby 2:</label>
-    <input type="text" id="hobbies2" name="hobbies2"><br><br>
+            <label for="hobbies2">Hobby 2:</label>
+            <input type="text" id="hobbies2" name="hobbies2">
 
-    <label for="hobbies3">Hobby 3:</label>
-    <input type="text" id="hobbies3" name="hobbies3"><br><br>
+            <label for="hobbies3">Hobby 3:</label>
+            <input type="text" id="hobbies3" name="hobbies3">
 
-    <input type="submit" value="Submit">
-</form>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
