@@ -163,7 +163,7 @@ function Home2() {{
 }}
 export default Home2;
 ''')
-        component_file_path = updated_folder_path / 'src' / 'components' / 'Home' / 'Home2.js'
+        component_file_path = updated_folder_path / 'src' / 'components' / 'Home' / 'AboutCard.js'
         with open(component_file_path, 'w', encoding='utf-8') as file:
             file.write(f'''
                        import React from "react";
@@ -198,7 +198,7 @@ function AboutCard() {{
             </li>
           </ul>
 
-          <p style={{ color: "rgb(155 126 172)" }}>
+          <p style={{{{ color: "rgb(155 126 172)" }}}}>
           "Everything you can imagine is real."</p>
           <footer className="blockquote-footer">Pablo Picasso</footer>
         </blockquote>
